@@ -24,15 +24,12 @@ export default function GameBoard({ map }: GameBoardProps) {
 
 
     return (
-      <div
-        key={`${rowIndex}-${colIndex}`}
-        style={{
-          width: 32,
-          height: 32,
-          backgroundColor,
-          border: "1px solid #222",
-        }}
-      />
+<div
+  key={`${rowIndex}-${colIndex}`}
+  className="w-8 h-8 border border-gray-800" // 32px = 8 * 4px (Tailwind spacing scale)
+  style={{ backgroundColor }}
+/>
+
     );
   })
 )}

@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+## Known Issues & Improvements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [ ] **Ghost Movement AI**  
+  Current ghost movement is basic/random. Improve pathfinding with BFS or A* for smarter chasing.
 
-Currently, two official plugins are available:
+- [ ] **Multiple Ghosts**  
+  Implement multiple ghosts with independent positions and behaviors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [ ] **Ghost Collision**  
+  Prevent ghosts from overlapping or stacking on the same tile.
 
-## Expanding the ESLint configuration
+- [ ] **Smooth Movement Animation**  
+  Enhance movement animations for Pac-Man and ghosts using CSS transitions or requestAnimationFrame.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [ ] **Win Condition**  
+  Implement proper win condition detection when all dots are eaten.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [ ] **Game Over Logic**  
+  Detect collisions between Pac-Man and ghosts to trigger game over.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [ ] **Power-Ups & Ghost Behavior**  
+  Add power pellets that let Pac-Man eat ghosts and change ghost behavior temporarily.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [ ] **Responsive UI**  
+  Improve UI layout and styling for different screen sizes.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- [ ] **Sound Effects & Music**  
+  Add sound effects for eating dots, ghost movements, and game events.
+
+- [ ] **Score Display**  
+  Improve score UI and add high score saving.
+
+- [ ] **Code Cleanup & Comments**  
+  Refactor code for readability, add comments, and document types clearly.
+
+- [ ] **Performance Optimization**  
+  Optimize rendering to minimize unnecessary re-renders.
+
+- [ ] **Keyboard Controls Improvements**  
+  Add support for continuous movement while arrow keys are held.
+
+- [ ] **Pause & Restart Game**  
+  Implement pause, restart, and reset game functionality.
+
