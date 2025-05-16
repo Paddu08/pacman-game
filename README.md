@@ -1,6 +1,6 @@
 ## Known Issues & Improvements
 
-- [] **Ghost Movement AI**  
+- [ ] **Ghost Movement AI**  
   Current ghost movement is basic/random. Improve pathfinding with BFS or A* for smarter chasing.
 
 - [ ] **Multiple Ghosts**  
@@ -15,7 +15,7 @@
 - [x] **Win Condition**  
   Implement proper win condition detection when all dots are eaten.
 
-- [ ] **Game Over Logic**  
+- [x] **Game Over Logic**  
   Detect collisions between Pac-Man and ghosts to trigger game over.
 
 - [ ] **Power-Ups & Ghost Behavior**  
